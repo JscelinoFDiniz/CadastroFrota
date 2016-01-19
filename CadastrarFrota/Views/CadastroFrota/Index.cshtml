@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CadastrarFrota.Domain.Car>
+
+@{
+    ViewBag.Title = "Lista de Veículos";
+}
+
+<h2>Frota</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar veículo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Fabricante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Chassi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Placa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataFrabricacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataModelo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fabricante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Modelo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Chassi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Placa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataFrabricacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataModelo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.IdCar  }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.IdCar }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.IdCar })
+        </td>
+    </tr>
+}
+
+</table>

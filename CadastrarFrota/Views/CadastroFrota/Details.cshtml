@@ -1,0 +1,66 @@
+﻿@model CadastrarFrota.Domain.Car
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Descrição</h2>
+
+<div>
+    <h4>Veículo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fabricante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fabricante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Chassi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Chassi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataFrabricacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataFrabricacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataModelo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataModelo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new {  id = Model.IdCar  }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

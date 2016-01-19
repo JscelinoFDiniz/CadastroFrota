@@ -1,0 +1,5 @@
+c:\users\juscelino\documents\visual studio 2015\Projects\CadastrarFrota\CadastroFrota.Domain\bin\Debug\CadastroFrota.Domain.dll
+c:\users\juscelino\documents\visual studio 2015\Projects\CadastrarFrota\CadastroFrota.Domain\bin\Debug\CadastroFrota.Domain.pdb
+c:\users\juscelino\documents\visual studio 2015\Projects\CadastrarFrota\CadastroFrota.Domain\obj\Debug\CadastroFrota.Domain.dll
+c:\users\juscelino\documents\visual studio 2015\Projects\CadastrarFrota\CadastroFrota.Domain\obj\Debug\CadastroFrota.Domain.pdb
+c:\users\juscelino\documents\visual studio 2015\Projects\CadastrarFrota\CadastroFrota.Domain\obj\Debug\CadastroFrota.Domain.csprojResolveAssemblyReference.cache
